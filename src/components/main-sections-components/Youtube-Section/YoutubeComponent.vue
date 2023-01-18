@@ -1,6 +1,10 @@
 <script>
-export default {
+import YoutubeCard from './pseudo-components/YoutubeCard.vue';
 
+export default {
+    components: {
+        YoutubeCard,
+    }
 }
 </script>
 
@@ -16,6 +20,7 @@ export default {
         </article>
         <article class="features-youtube">
             <!-- Micro component con all'interno alcuni dei video da inserire con js -->
+            <YoutubeCard />
         </article>
     </section>
 </template>

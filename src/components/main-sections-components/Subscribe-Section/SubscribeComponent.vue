@@ -1,6 +1,10 @@
 <script>
-export default {
+import CourseCard from './pseudo-components/CourseCard.vue';
 
+export default {
+    components: {
+        CourseCard,
+    }
 }
 </script>
 
@@ -14,6 +18,7 @@ export default {
         </article>
         <article class="types-courses">
             <!-- Micro component con all'interno alcuni dei corsi da inserire con js -->
+            <CourseCard />
         </article>
     </section>
 </template>

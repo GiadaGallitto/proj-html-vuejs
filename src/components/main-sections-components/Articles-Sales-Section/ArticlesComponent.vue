@@ -1,6 +1,10 @@
 <script>
-export default {
+import ArticlesCard from './pseudo-components/ArticlesCard.vue';
 
+export default {
+    components: {
+        ArticlesCard
+    }
 }
 </script>
 
@@ -8,6 +12,7 @@ export default {
     <section class="articles-sales">
         <article class="latest-articles">
             <!-- Micro component con all'interno alcuni degli ultimi articoli da inserire con js -->
+            <ArticlesCard />
         </article>
         <article class="main-sales">
             <!-- Mini jumbo con background-image -->
