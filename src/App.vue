@@ -44,7 +44,7 @@ header{
 .wrapper-container{
   width: 75%;
   margin: 0 auto;
-  border: 1px solid white;
+
 }
 
 </style>

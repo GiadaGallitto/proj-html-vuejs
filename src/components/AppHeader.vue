@@ -24,11 +24,27 @@ export default {
                 <li>
                     <button class="blue-btn">Schedule a workout</button>
                 </li>
+                <li><i class="fa-solid fa-cart-shopping"></i></li>
+                <li><i class="fa-solid fa-magnifying-glass"></i></li>
             </ul>
         </div>
         <!-- Qui inserirò il jumbotron con background-image e il container di testo a sinisra del jumbo (va aggiunto anche il componentPlayButton) -->
-        <div class="jumbotron">
-            <div class="jumbo-text"></div>
+        <div class="jumbotron wrapper-container">
+            <div class="jumbo-text">
+                <h4 class="red-title">Certified fitness professional</h4>
+                <h1>Take control of your health</h1>
+                <!-- Component divider -->
+                <div>Divisore</div>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex in nulla iusto dolorum natus.</p>
+                <button class="blue-btn">
+                    <i class="fa-brands fa-youtube pe-2 fs-6"></i>
+                    Visit my Youtube channel
+                </button>
+                <button id="empty-btn">
+                    Buy Avada today
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </div>
             <!-- Component Play Button -->
             <div class="jumbo-details">
                 <!-- Elementi di dettaglio a destra del jumbotron -->
@@ -49,7 +65,6 @@ export default {
         justify-content: space-between;
         display: flex;
         align-items: center;
-
         .nav-bar {
             list-style-type: none;
             margin-bottom: 0;
@@ -65,6 +80,47 @@ export default {
                     color: black;
                     background-color: #fff941;
                     border-radius: 2px;
+                }
+                i{
+                    color: $SilverColor;
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+
+    .jumbotron{
+        // height: 500px;
+        background-image: url("../assets/header-imgs/slider82x-scaled.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top;
+        .jumbo-text{
+            padding: 6rem 0 9rem;
+            h1{
+                color: $WhiteColor;
+                padding: 0.5rem 0;
+                font-size: 3.5rem;
+            };
+
+            p{
+                color: $JumboColor;
+                padding: 1rem 0;
+                font-weight: 500;
+            };
+
+            #empty-btn{
+                margin-left: 1rem;
+                background: none;
+                color: $WhiteColor;
+                border-color: $JumboColor;
+                padding: 0.7rem 2rem;
+                border-radius: 25px;
+                i{
+                    padding-left: 0.5rem;
+                    color: $WhiteColor;
+                    font-size: 1.2rem;
+                    vertical-align: middle;
                 }
             }
         }
