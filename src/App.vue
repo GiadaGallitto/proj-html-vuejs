@@ -42,9 +42,9 @@ header{
 }
 
 .wrapper-container{
-  width: 75%;
+  width: 70%;
   margin: 0 auto;
-
+  height: 100%;
 }
 
 </style>

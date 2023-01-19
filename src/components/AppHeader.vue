@@ -116,9 +116,9 @@ export default {
         .jumbo-text{
             position: absolute;
             top: 0;
-            left: 13%;
+            left: 15%;
             z-index: 1;
-            padding: 6rem 0 9rem;
+            padding: 8rem 0 7rem;
             h1{
                 color: $WhiteColor;
                 padding: 0.5rem 0;
