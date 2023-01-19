@@ -95,8 +95,8 @@ export default {
                 display: flex;
                 margin-bottom: 1.5rem;
                 img{
-                    width: 50px;
-                    height: 50px;
+                    width: 65px;
+                    height: 65px;
                     margin-right: 1rem;
                 };
                 .name-channel{

@@ -32,9 +32,11 @@ export default {
             </div>
         </article>
 
-        <article class="types-courses">
+        <article class="types-courses wrapper-container">
             <!-- Micro component con all'interno alcuni dei corsi da inserire con js -->
-            <CourseCard />
+            <div class="grid-courses">
+                <CourseCard />
+            </div>
         </article>
     </section>
 </template>
@@ -43,7 +45,6 @@ export default {
 @use "../../../styles/partials/variables.scss" as *;
 .fitness-subscribes{
     width: 100%;
-    
     background-color: $CodGrayColor;
     .upper-sub{
         position: relative;
@@ -97,12 +98,20 @@ export default {
         .jumbo-image{
             height: 100%;
             width: 100%;
-            background-image: linear-gradient(to right, black, black, black, transparent 75%),
+            background-image: linear-gradient(to right, #060606, #060606, #060606, transparent 75%),
             url("../../../assets/main-imgs/sub-courses-section/banner1-2x.jpg");
             background-size: 100%;
             background-repeat: no-repeat;
             background-position: top;
         };
+    };
+    .types-courses{
+        padding: 7rem 0;
+        .grid-courses{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+        }
     }
 }
 </style>
