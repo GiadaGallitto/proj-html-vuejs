@@ -40,7 +40,7 @@ export default {
                 <h4 class="red-title">Certified fitness professional</h4>
                 <h1>Take control of your health</h1>
                 <!-- Component divider -->
-                <DividerComponent />
+                <DividerComponent id="yellow-divider" />
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex in nulla iusto dolorum natus.</p>
                 <button class="blue-btn">
                     <i class="fa-brands fa-youtube pe-2 fs-6"></i>
@@ -97,7 +97,7 @@ export default {
                     margin-left: 0.6rem;
                     padding: 0.45rem 0.6rem 0.4rem;
                     color: black;
-                    background-color: #fff941;
+                    background-color: $YellowColor;
                     border-radius: 2px;
                 }
                 i{
@@ -124,6 +124,11 @@ export default {
                 padding: 0.5rem 0;
                 font-size: 3.5rem;
             };
+
+            #yellow-divider{
+                color: $YellowColor;
+                font-size: 1.2rem;
+            }
 
             p{
                 color: $JumboColor;

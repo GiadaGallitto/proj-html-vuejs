@@ -13,11 +13,10 @@ export default{
 </template>
 
 <style lang="scss" scoped>
+@use "../styles/partials/variables.scss" as*;
 .divider{
     i{
         margin-right: -3px;
-        color: #fffd42;
-        font-size: 1.2rem;
     }
 }
 </style>
