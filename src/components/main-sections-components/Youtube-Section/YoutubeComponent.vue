@@ -58,7 +58,6 @@ export default {
 <style lang="scss" scoped>
 @use "../../../styles/partials/variables.scss" as *;
 .youtube-features{
-    height: 600px;
     position: relative;
     .main-youtube{
         position: relative;
