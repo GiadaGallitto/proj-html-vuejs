@@ -41,7 +41,9 @@ export default {
 
         <article class="features-youtube wrapper-container">
             <!-- Micro component con all'interno alcuni dei video da inserire con js -->
-            <YoutubeCard />
+            <div class="grid-videos">
+                <YoutubeCard />
+            </div>
         </article>
     </section>
 </template>
@@ -125,6 +127,12 @@ export default {
                 }
             }
         }
+    };
+    .grid-videos{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        border: 1px solid black;
     }
 }
 </style>
