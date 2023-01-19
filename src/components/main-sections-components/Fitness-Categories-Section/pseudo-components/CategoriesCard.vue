@@ -66,8 +66,6 @@ export default{
             height: 100%;
             position: absolute;
             background: linear-gradient(transparent 65%, black);
-            // background-color: linear-gradient(to bottom, black, black, black, transparent 60%),
-            // rgba(0, 0, 0, 0.7);
         }
         img{
             width: 100%;
