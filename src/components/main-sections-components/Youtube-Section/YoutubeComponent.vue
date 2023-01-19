@@ -136,6 +136,7 @@ export default {
         }
     };
     .features-youtube{
+        margin-bottom: 5rem;
         .tools{
             display: flex;
             align-items: center;
