@@ -29,7 +29,7 @@ export default {
             </ul>
         </div>
         <!-- Qui inserirò il jumbotron con background-image e il container di testo a sinisra del jumbo (va aggiunto anche il componentPlayButton) -->
-        <div class="jumbotron wrapper-container">
+        <div class="jumbotron">
             <div class="jumbo-text">
                 <h4 class="red-title">Certified fitness professional</h4>
                 <h1>Take control of your health</h1>
@@ -44,6 +44,8 @@ export default {
                     Buy Avada today
                     <i class="fa-solid fa-arrow-right"></i>
                 </button>
+            </div>
+            <div class="jumbo-image">
             </div>
             <!-- Component Play Button -->
             <div class="jumbo-details">
@@ -90,12 +92,15 @@ export default {
     }
 
     .jumbotron{
-        // height: 500px;
-        background-image: url("../assets/header-imgs/slider82x-scaled.jpg");
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: top;
+        height: 600px;
+        position: relative;
+        display: flex;
+        justify-content: end;
         .jumbo-text{
+            position: absolute;
+            top: 0;
+            left: 13%;
+            z-index: 1;
             padding: 6rem 0 9rem;
             h1{
                 color: $WhiteColor;
@@ -123,6 +128,16 @@ export default {
                     vertical-align: middle;
                 }
             }
+        };
+        // linear-gradient(to bottom, transparent 0%, black 100%);
+        .jumbo-image{
+            height: 100%;
+            width: 100%;
+            background-image: linear-gradient(to right, black, black, transparent 70%),
+            url("../assets/header-imgs/slider82x-scaled.jpg");
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-position: top;
         }
     }
 }
