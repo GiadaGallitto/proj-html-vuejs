@@ -1,6 +1,10 @@
 <script>
-export default {
+import PlayButtonComponent from './PlayButtonComponent.vue';
 
+export default {
+    components: {
+        PlayButtonComponent,
+    }
 }
 </script>
 
@@ -48,8 +52,17 @@ export default {
             <div class="jumbo-image">
             </div>
             <!-- Component Play Button -->
+            <PlayButtonComponent class="header-play" />
             <div class="jumbo-details">
                 <!-- Elementi di dettaglio a destra del jumbotron -->
+                <div class="box-detail">
+                    <i class="fa-solid fa-download"></i>
+                    <span class="d-block">Demos</span>
+                </div>
+                <div class="box-detail">
+                    <i class="fa-solid fa-dollar-sign" id="green-icon"></i>
+                    <span class="d-block">On Sale</span>
+                </div>
             </div>
         </div>
     </div>
@@ -92,7 +105,7 @@ export default {
     }
 
     .jumbotron{
-        height: 600px;
+        height: 650px;
         position: relative;
         display: flex;
         justify-content: end;
@@ -138,6 +151,32 @@ export default {
             background-size: 100%;
             background-repeat: no-repeat;
             background-position: top;
+        };
+        .header-play{
+            top: 38%;
+            right: 21%;
+        }
+        .jumbo-details{
+            position: absolute;
+            top: 8%;
+            right: 1%;
+            div{
+                background-color: $WhiteColor;
+                color: #33475b;
+                font-weight: 600;
+                text-align: center;
+                padding: 0.5rem 1rem;
+                margin-bottom: 0.5rem;
+                border-radius: 8px;
+                i{
+                    padding-bottom: 0.5rem;
+                    font-size: 2rem;
+
+                    &#green-icon{
+                        color: #81c891;
+                    }
+                }
+            }
         }
     }
 }

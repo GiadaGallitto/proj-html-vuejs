@@ -1,0 +1,23 @@
+<script>
+export default {
+    
+}
+</script>
+
+<template>
+    <div id="play-button">
+        <i class="fa-solid fa-play"></i>
+    </div>
+</template>
+
+<style lang="scss" scoped>
+@use "../styles/partials/variables.scss" as *;
+#play-button{
+    position: absolute;
+    color: $DodgerBlueColor;
+    background-color: $WhiteColor;
+    padding: 2rem 2.5rem;
+    border-radius: 50%;
+    font-size: 1.2rem;
+}
+</style>
