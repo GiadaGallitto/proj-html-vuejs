@@ -1,9 +1,11 @@
 <script>
 import PlayButtonComponent from './PlayButtonComponent.vue';
+import DividerComponent from './DividerComponent.vue';
 
 export default {
     components: {
         PlayButtonComponent,
+        DividerComponent,
     }
 }
 </script>
@@ -38,7 +40,7 @@ export default {
                 <h4 class="red-title">Certified fitness professional</h4>
                 <h1>Take control of your health</h1>
                 <!-- Component divider -->
-                <div>Divisore</div>
+                <DividerComponent />
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex in nulla iusto dolorum natus.</p>
                 <button class="blue-btn">
                     <i class="fa-brands fa-youtube pe-2 fs-6"></i>
@@ -88,10 +90,12 @@ export default {
                 display: inline-block;
                 color: $SilverColor;
                 padding: 0 1.2rem;
+                font-size: 1.1rem;
                 #new-btn{
                     font-size: 0.9rem;
+                    font-weight: 400;
                     margin-left: 0.6rem;
-                    padding: 0.4rem 0.6rem;
+                    padding: 0.45rem 0.6rem 0.4rem;
                     color: black;
                     background-color: #fff941;
                     border-radius: 2px;
@@ -125,6 +129,7 @@ export default {
                 color: $JumboColor;
                 padding: 1rem 0;
                 font-weight: 500;
+                font-size: 1.1rem;
             };
 
             #empty-btn{
@@ -132,7 +137,7 @@ export default {
                 background: none;
                 color: $WhiteColor;
                 border-color: $JumboColor;
-                padding: 0.7rem 2rem;
+                padding: 0.9rem 2rem 0.7rem;
                 border-radius: 25px;
                 i{
                     padding-left: 0.5rem;
@@ -146,7 +151,7 @@ export default {
         .jumbo-image{
             height: 100%;
             width: 100%;
-            background-image: linear-gradient(to right, black, black, transparent 70%),
+            background-image: linear-gradient(to right, black, black, black, transparent 60%),
             url("../assets/header-imgs/slider82x-scaled.jpg");
             background-size: 100%;
             background-repeat: no-repeat;

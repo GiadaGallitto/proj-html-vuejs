@@ -33,7 +33,7 @@ export default {
 @use "./styles/partials/variables.scss" as *;
 @use "bootstrap/scss/bootstrap.scss" as *;
 body {
-    font-family: 'Roboto', sans-serif;
+  font-family: 'Barlow Semi Condensed', sans-serif;
 }
 
 header{

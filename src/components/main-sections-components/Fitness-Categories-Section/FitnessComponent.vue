@@ -10,14 +10,20 @@ export default {
 
 <template>
     <section class="fitness-categories">
-        <!-- Micro component con all'interno le categorie di fitness mostrate con js -->
-        <CategoriesCard />
-        <div class="quote">
-            <!-- Contenitore di testo con citazione, divider e nome/luogo della persona (per la struttura di questo -> classe e modifica unica per tutte le simili) -->
+        <div class="wrapper-container">
+            <!-- Micro component con all'interno le categorie di fitness mostrate con js -->
+            <CategoriesCard />
+            <div class="quote">
+                <!-- Contenitore di testo con citazione, divider e nome/luogo della persona (per la struttura di questo -> classe e modifica unica per tutte le simili) -->
+            </div>
         </div>
     </section>
 </template>
 
 <style lang="scss" scoped>
-
+@use "../../../styles/partials/variables.scss" as *;
+    .fitness-categories{
+        background-color: aquamarine;
+        height: 500px;
+    }
 </style>

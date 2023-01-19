@@ -7,7 +7,7 @@ import ArticlesComponent from './main-sections-components/Articles-Sales-Section
 import PartnersComponent from './main-sections-components/Partners-Section/PartnersComponent.vue';
 import DailyWorkoutComponent from './main-sections-components/Daily-Workout-Section/DailyWorkoutComponent.vue';
 
-export default{
+export default {
     components: {
         FitnessComponent,
         YoutubeComponent,
@@ -21,19 +21,17 @@ export default{
 
 <template>
     <div class="main-container">
-        <div class="wrapper-container">
-            <FitnessComponent />
+        <FitnessComponent />
 
-            <YoutubeComponent />
+        <YoutubeComponent />
 
-            <SubscribeComponent />
+        <SubscribeComponent />
 
-            <ArticlesComponent />
+        <ArticlesComponent />
 
-            <PartnersComponent />
+        <PartnersComponent />
 
-            <DailyWorkoutComponent />
-        </div>
+        <DailyWorkoutComponent />
     </div>
 </template>
 
