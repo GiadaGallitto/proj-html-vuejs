@@ -1,5 +1,4 @@
 <script>
-
 export default{
     components: {
     },
@@ -37,10 +36,11 @@ export default{
 <template>
     <div v-for="videoEl in videoList" class="video-card">
         <div class="image-bg">
+            <div class="playlist-play"><i class="fa-solid fa-play"></i></div>
             <img :src="getImagePath(videoEl.image)" alt="video image">
         </div>
         <div class="text">
-            <h3 class="title">{{ videoEl.title }}</h3>
+            <h6 class="title">{{ videoEl.title }}</h6>
             <h5 class="subtitle">{{ videoEl.subtitle }}</h5>
         </div>
     </div>
@@ -52,35 +52,38 @@ export default{
 .video-card{
     width: calc((100% / 3) - 2rem);
     position: relative;
-    border-radius: 1% 1% 10% 1%;
-    overflow: hidden;
     .image-bg{
         width: 100%;
-        height: 100%;
+        border-radius: 1% 1% 10% 1%;
+        overflow: hidden;
+        margin-bottom: 1.5rem;
         img{
             width: 100%;
             height: 100%;
             object-fit: cover;
+        };
+        .playlist-play{
+            position: absolute;
+            top: 30%;
+            left: 41%;
+            // transform: translate(-50% , -50%);
+            color: $DodgerBlueColor;
+            background-color: $WhiteColor;
+            padding: 1.4rem 1.7rem;
+            border-radius: 50%;
+            font-size: 0.8rem;
         }
     }
     .text{
-        position: absolute;
-        bottom: 7%;
-        left: 10%;
-
-        #gray-divider{
-            color: $WhiteColor;
-            margin-bottom: 1rem;
-            font-size: 0.9rem;
-        }
+        position: relative;
+        text-align: center;
         .title{
-            color: $WhiteColor;
-            font-size: 2.2rem;
-            line-height: 1.7rem;
+            color: $CinderColor;
+            font-size: 1.3rem;
         }
         .subtitle{
-            color: $YellowColor;
-            font-size: 1.4rem;
+            color: $DodgerBlueColor;
+            font-size: 1rem;
         }
     }
 }

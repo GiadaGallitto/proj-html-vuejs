@@ -41,6 +41,13 @@ export default {
 
         <article class="features-youtube wrapper-container">
             <!-- Micro component con all'interno alcuni dei video da inserire con js -->
+            <div class="tools">
+                <h3>Featured playlists</h3>
+                <h5>
+                    View all videos
+                    <i class="fa-solid fa-chevron-right"></i>
+                </h5>
+            </div>
             <div class="grid-videos">
                 <YoutubeCard />
             </div>
@@ -51,7 +58,7 @@ export default {
 <style lang="scss" scoped>
 @use "../../../styles/partials/variables.scss" as *;
 .youtube-features{
-    height: 900px;
+    height: 600px;
     position: relative;
     .main-youtube{
         position: relative;
@@ -128,11 +135,23 @@ export default {
             }
         }
     };
-    .grid-videos{
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
-        border: 1px solid black;
+    .features-youtube{
+        .tools{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 2rem;
+
+            i{
+                font-size: 1rem;
+                padding-left: 0.2rem;
+            }
+        }
+        .grid-videos{
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+        }
     }
 }
 </style>

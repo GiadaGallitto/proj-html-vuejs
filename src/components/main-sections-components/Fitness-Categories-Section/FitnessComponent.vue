@@ -55,7 +55,7 @@ export default {
             #yellow-divider{
                 color: $YellowColor;
                 font-size: 1.3rem;
-                line-height: 3rem;
+                line-height: 3.2rem;
             };
             .author{
                 display: flex;
