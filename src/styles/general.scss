@@ -1,6 +1,12 @@
 // Per regole css generali
+@use "./partials/variables.scss" as *;
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
-body {
-    font-family: 'Roboto', sans-serif;
+.blue-btn{
+    background-color: $DodgerBlueColor;
+    color: $WhiteColor;
+    font-size: 0.9rem;
+    font-weight: 600;
+    padding: 1rem 2.2rem 0.8rem;
+    border-radius: 30px;
 }

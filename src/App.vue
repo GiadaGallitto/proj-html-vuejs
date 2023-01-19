@@ -32,4 +32,19 @@ export default {
 @use "./styles/general.scss" as *;
 @use "./styles/partials/variables.scss" as *;
 @use "bootstrap/scss/bootstrap.scss" as *;
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+header{
+  width: 100%;
+  background-color: $CodGrayColor;
+}
+
+.wrapper-container{
+  width: 75%;
+  margin: 0 auto;
+  border: 1px solid white;
+}
+
 </style>
