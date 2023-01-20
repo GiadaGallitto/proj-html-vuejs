@@ -9,27 +9,27 @@ export default{
                 {
                     image: 'blog4-2x-400x258',
                     title: "The best protein shake",
-                    admin: "admin"
+                    admin: "admin",
                 },
                 {
                     image: 'blog1-2x-400x258',
                     title: "Lift, firm & perk up",
-                    admin: "admin"
+                    admin: "admin",
                 },
                 {
                     image: 'blog3-2x-400x258',
                     title: "Slim & trim your waist",
-                    admin: "admin"
+                    admin: "admin",
                 },
-            ]
-        }
+            ],
+        };
     },
 
     methods: {
         getImagePath: function(img){
             return new URL(`../../../../assets/main-imgs/articles-section/${img}.jpg`, import.meta.url).href;
         },
-    }
+    },
 }
 </script>
 
@@ -39,14 +39,12 @@ export default{
             <div class="layover"></div>
             <img :src="getImagePath(videoEl.image)" alt="video image">
         </div>
+
         <div class="text">
-            <a href="">
-                <h6 class="title">{{ videoEl.title }}</h6>
-            </a>
+            <a href=""><h6 class="title">{{ videoEl.title }}</h6></a>
             <h5 class="subtitle">By <span><a href="">{{ videoEl.admin }}</a></span> | November 26th, 2019 | <span><a href="">Gym</a></span></h5>
         </div>
     </div>
-
 </template>
 
 <style lang="scss" scoped>
@@ -71,7 +69,7 @@ export default{
 
             &:hover{
                 opacity: 0.7;
-            }
+            };
         };
 
         img{
@@ -79,7 +77,7 @@ export default{
             height: 100%;
             object-fit: cover;
         };
-    }
+    };
     .text{
         position: relative;
         padding-left: 5%;
@@ -89,8 +87,8 @@ export default{
             font-weight: 600;
             &:hover{
                 color: $DodgerBlueColor;
-            }
-        }
+            };
+        };
         .subtitle{
             color: $JumboColor;
             font-size: 1rem;
@@ -99,9 +97,9 @@ export default{
                 color: black;
                 &:hover{
                 color: $DodgerBlueColor;
-                }
-            }
-        }
-    }
-}
+                };
+            };
+        };
+    };
+};
 </style>

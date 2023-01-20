@@ -13,7 +13,6 @@ export default {
 <template>
     <section class="articles-sales">
         <article class="latest-articles wrapper-container">
-            <!-- Micro component con all'interno alcuni degli ultimi articoli da inserire con js -->
             <div class="tools">
                 <h3>Latest articles</h3>
                 <h5>
@@ -29,9 +28,7 @@ export default {
         </article>
 
         <article class="main-sales">
-            <!-- Mini jumbo con background-image -->
             <div class="quote-sales">
-                <!-- Contenitore di testo al centro con una quote e un button per acquistare -->
                 <h1>"I've failed over and over again in my life. And that is why I succeed."</h1>
                 <DividerComponent id="yellow-divider" />
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam debitis atque enim, exercitationem
@@ -47,10 +44,8 @@ export default {
 
 .articles-sales {
     width: 100%;
-
     .latest-articles {
         padding: 7rem 0;
-
         .tools {
             display: flex;
             align-items: center;
@@ -62,23 +57,21 @@ export default {
                     color: black;
                     &:hover{
                         color: $DodgerBlueColor;
-                    }
-                }
-            }
+                    };
+                };
+            };
 
             i {
                 font-size: 1rem;
                 padding-left: 0.2rem;
-            }
-        }
-
+            };
+        };
         .grid-videos {
             display: flex;
             justify-content: space-between;
             width: 100%;
-        }
-    }
-
+        };
+    };
     .main-sales {
         height: 600px;
         width: 100%;
@@ -86,7 +79,7 @@ export default {
         justify-content: center;
         padding-top: 11rem;
         background-image: linear-gradient(transparent 20%, black),
-            url("../../../assets/main-imgs/articles-section/banner2-2x.jpg");
+        url("../../../assets/main-imgs/articles-section/banner2-2x.jpg");
         background-size: cover;
         background-repeat: no-repeat;
 
@@ -121,10 +114,8 @@ export default {
                     font-size: 0.8rem;
                     padding-left: 0.5rem
                 };
-            }
-        }
-    }
-}
-
-;
+            };
+        };
+    };
+};
 </style>

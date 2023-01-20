@@ -14,7 +14,7 @@ export default {
         SubscribeComponent,
         ArticlesComponent,
         PartnersComponent,
-        DailyWorkoutComponent
+        DailyWorkoutComponent,
     }
 }
 </script>

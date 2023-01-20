@@ -11,7 +11,6 @@ export default {
 <template>
     <section class="partners">
         <article class="partners-cards wrapper-container">
-            <!-- Micro component con all'interno i partners da inserire con js -->
             <div class="grid-partners">
                 <PartnersCard />
             </div>
@@ -31,7 +30,7 @@ export default {
             width: 100%;
             display: flex;
             justify-content: space-between;
-        }
-    }
-}
+        };
+    };
+};
 </style>

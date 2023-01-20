@@ -34,21 +34,21 @@ export default {
 @use "bootstrap/scss/bootstrap.scss" as *;
 body {
   font-family: 'Barlow Semi Condensed', sans-serif;
-}
+};
 
 header{
   width: 100%;
   background-color: $CodGrayColor;
-}
+};
 
 .wrapper-container{
   width: 70%;
   margin: 0 auto;
   height: 100%;
-}
+};
 
 a{
   text-decoration: none;
-}
+};
 
 </style>

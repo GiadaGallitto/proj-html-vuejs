@@ -11,31 +11,31 @@ export default{
                     title: "Team training",
                     subtitle: "Find a partner",
                     text: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi, velit. Quidem nulla veritatis dignissimos nostrum saepe. Cupiditate, voluptates quasi.",
-                    info: "Find a partner"
+                    info: "Find a partner",
                 },
                 {
                     image: 'dumbbell',
                     title: "Crossfit workout",
                     subtitle: "Push your limits",
                     text: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi, velit. Quidem nulla veritatis dignissimos nostrum saepe. Cupiditate, voluptates quasi.",
-                    info: "Learn about Crossfit"
+                    info: "Learn about Crossfit",
                 },
                 {
                     image: 'slim',
                     title: "Weight loss plan",
                     subtitle: "Shed those pounds",
                     text: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi, velit. Quidem nulla veritatis dignissimos nostrum saepe. Cupiditate, voluptates quasi.",
-                    info: "Schedule a workout"
+                    info: "Schedule a workout",
                 },
-            ]
-        }
+            ],
+        };
     },
 
     methods: {
         getImagePath: function(img){
             return new URL(`../../../../assets/main-imgs/sub-courses-section/${img}.png`, import.meta.url).href;
         },
-    }
+    },
 }
 </script>
 
@@ -45,6 +45,7 @@ export default{
             <div class="image-icon">
                 <img :src="getImagePath(courseEl.image)" alt="course image">
             </div>
+
             <div class="text">
                 <h3 class="title">{{ courseEl.title }}</h3>
                 <h5 class="subtitle">{{ courseEl.subtitle }}</h5>
@@ -69,8 +70,8 @@ export default{
         padding: 0;
         &:hover .box-card{
             padding: 5.5rem 3rem;
-        }
-    }
+        };
+    };
     .box-card{
         width: 100%;
         height: 100%;
@@ -81,14 +82,14 @@ export default{
         border: 4px solid $DodgerBlueColor;
         border-radius: 5px;
         transition: all 0.3s ease-in-out;
-    }
+    };
     .image-icon{
         img{
             width: 70px;
             height: 70px;
             margin-bottom: 2rem;
-        }
-    }
+        };
+    };
     .text{
         text-align: center;
         .title{
@@ -112,8 +113,8 @@ export default{
             .fa-chevron-right{
                 font-size: 0.7rem;
                 margin-left: 0.4rem;
-            }
-        }
-    }
-}
+            };
+        };
+    };
+};
 </style>

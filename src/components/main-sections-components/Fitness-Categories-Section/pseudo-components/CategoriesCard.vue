@@ -24,15 +24,15 @@ export default{
                     title: "Team training",
                     subtitle: "Find a partner"
                 },
-            ]
-        }
+            ],
+        };
     },
 
     methods: {
         getImagePath: function(img){
             return new URL(`../../../../assets/main-imgs/fitness-section/${img}.jpg`, import.meta.url).href;
         },
-    }
+    },
 }
 </script>
 
@@ -42,6 +42,7 @@ export default{
             <div class="layover"></div>
             <img :src="getImagePath(categoryEl.image)" alt="category image">
         </div>
+
         <div class="text">
             <DividerComponent id="gray-divider" />
             <h3 class="title">{{ categoryEl.title }}</h3>
@@ -62,7 +63,7 @@ export default{
     transition: all 0.3s ease-in-out;
     &:hover{
         transform: scale(1.05);
-    }
+    };
     .image-bg{
         width: 100%;
         height: 100%;
@@ -71,13 +72,13 @@ export default{
             height: 100%;
             position: absolute;
             background: linear-gradient(transparent 65%, black);
-        }
+        };
         img{
             width: 100%;
             height: 100%;
             object-fit: cover;
-        }
-    }
+        };
+    };
     .text{
         position: absolute;
         bottom: 7%;
@@ -87,16 +88,16 @@ export default{
             color: $WhiteColor;
             margin-bottom: 1rem;
             font-size: 0.9rem;
-        }
+        };
         .title{
             color: $WhiteColor;
             font-size: 2.2rem;
             line-height: 1.7rem;
-        }
+        };
         .subtitle{
             color: $YellowColor;
             font-size: 1.4rem;
-        }
-    }
-}
+        };
+    };
+};
 </style>

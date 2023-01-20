@@ -9,27 +9,27 @@ export default{
                 {
                     image: 'video2-2x',
                     title: "Thighs & glue workout",
-                    subtitle: "Increase your mobility"
+                    subtitle: "Increase your mobility",
                 },
                 {
                     image: 'video7-2x',
                     title: "Lift, firm & perk up",
-                    subtitle: "Feel young again"
+                    subtitle: "Feel young again",
                 },
                 {
                     image: 'video9-2x',
                     title: "Slim & trim your waist",
-                    subtitle: "Shed those extra pounds"
+                    subtitle: "Shed those extra pounds",
                 },
-            ]
-        }
+            ],
+        };
     },
 
     methods: {
         getImagePath: function(img){
             return new URL(`../../../../assets/main-imgs/youtube-section/${img}.jpg`, import.meta.url).href;
         },
-    }
+    },
 }
 </script>
 
@@ -39,6 +39,7 @@ export default{
             <div class="playlist-play"><i class="fa-solid fa-play"></i></div>
             <img :src="getImagePath(videoEl.image)" alt="video image">
         </div>
+
         <div class="text">
             <h6 class="title">{{ videoEl.title }}</h6>
             <h5 class="subtitle">{{ videoEl.subtitle }}</h5>
@@ -58,6 +59,7 @@ export default{
         border-radius: 1% 1% 10% 1%;
         overflow: hidden;
         margin-bottom: 1.5rem;
+
         img{
             width: 100%;
             height: 100%;
@@ -74,21 +76,21 @@ export default{
             font-size: 0.8rem;
             &:hover{
                 color: $BurntSiennaColor;
-            }
-        }
-    }
+            };
+        };
+    };
     .text{
         position: relative;
         text-align: center;
         .title{
             color: $CinderColor;
             font-size: 1.3rem;
-        }
+        };
         .subtitle{
             color: $DodgerBlueColor;
             font-size: 1rem;
-        }
-    }
-}
+        };
+    };
+};
 </style>
 

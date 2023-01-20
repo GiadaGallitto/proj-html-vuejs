@@ -10,9 +10,7 @@ export default {
 
 <template>
     <section class="daily-workout">
-        <!-- Mini jumbo con background-image -->
         <article class="work-jumbo">
-            <!-- Contenitore di testo al centro con le info del workout giornaliero-->
             <PlayButtonComponent class="play-work" />
             <div class="info-workout">
                 <h1>Crossfit workout of the day</h1>
@@ -43,7 +41,7 @@ export default {
         .play-work{
             top: 25%;
             left: 46%;
-        }
+        };
         .info-workout {
             width: 35%;
             text-align: center;
@@ -58,7 +56,7 @@ export default {
                 font-size: 2.5rem;
                 color: $YellowColor;
                 margin-bottom: 1rem;
-            }
+            };
 
             p a{
                 color: $WhiteColor;
@@ -66,9 +64,9 @@ export default {
                 margin-bottom: 2rem;
                 i {
                     margin-left: 0.2rem;
-                }
+                };
             };
-        }
-    }
-}
+        };
+    };
+};
 </style>

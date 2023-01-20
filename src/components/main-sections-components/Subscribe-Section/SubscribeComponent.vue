@@ -6,7 +6,7 @@ export default {
     components: {
         CourseCard,
         DividerComponent,
-    }
+    },
 }
 </script>
 
@@ -15,10 +15,8 @@ export default {
     <section class="fitness-subscribes">
         <article class="upper-sub">
             <div class="sub-infos">
-                <!-- Contenitore di testo a sinistra con info per il subscribe -->
                 <h4 class="red-title">Join our mailing list today</h4>
                 <h1>Insider offers & flash sales in your inbox every week.</h1>
-                <!-- Component divider -->
                 <DividerComponent id="yellow-divider" />
                 <div class="input-sub">
                     <input placeholder="Insert your e-mail ...*" type="text">
@@ -27,13 +25,10 @@ export default {
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa sint fuga modi doloremque voluptate et explicabo minus temporibus labore aliquid.</p>
             </div>
 
-            <div class="jumbo-image">
-                <!-- Mini jumbo con background-image -->
-            </div>
+            <div class="jumbo-image"></div>
         </article>
 
         <article class="types-courses wrapper-container">
-            <!-- Micro component con all'interno alcuni dei corsi da inserire con js -->
             <div class="grid-courses">
                 <CourseCard />
             </div>
@@ -58,6 +53,7 @@ export default {
             top: 0;
             left: 15%;
             padding: 6rem 0 7rem;
+
             h1{
                 color: $WhiteColor;
                 padding: 0.5rem 0;
@@ -78,14 +74,14 @@ export default {
                     border: none;
                     border-radius: 25px;
                     margin-right: 2rem;
-                }
+                };
                 .blue-btn{
                     &#sub-btn{
                         padding-top: 0.8rem;
                         font-size: 1.1rem;
                         width: 32%;
-                    }
-                }
+                    };
+                };
             };
 
             p{
@@ -112,7 +108,7 @@ export default {
             display: flex;
             justify-content: space-between;
             padding-top: 6rem;
-        }
-    }
-}
+        };
+    };
+};
 </style>

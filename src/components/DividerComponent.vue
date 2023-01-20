@@ -17,6 +17,6 @@ export default{
 .divider{
     i{
         margin-right: -3px;
-    }
-}
+    };
+};
 </style>

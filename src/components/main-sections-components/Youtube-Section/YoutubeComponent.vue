@@ -14,11 +14,10 @@ export default {
     <section class="youtube-features">
         <article class="main-youtube flex-container">
             <div class="main-video">
-                <!-- Immagine e Component Play Button -->
                 <PlayButtonComponent class="youtube-play" />
             </div>
+
             <div class="youtube-infos">
-                <!-- Testo con info canale youtube e button -->
                 <h3>Tune up your workouts</h3>
                 <h1>The best health & fitness advice online</h1>
                 <div class="yt-channel">
@@ -40,7 +39,6 @@ export default {
         </article>
 
         <article class="features-youtube wrapper-container">
-            <!-- Micro component con all'interno alcuni dei video da inserire con js -->
             <div class="tools">
                 <h3>Featured playlists</h3>
                 <h5>
@@ -80,7 +78,7 @@ export default {
                 top: 50%;
                 left: 50%;
                 transform: translate(-50% , -50%);
-            }
+            };
         };
         .youtube-infos{
             width: 50%;
@@ -123,8 +121,8 @@ export default {
                         color: $JumboColor;
                         padding: 0.2rem 0.5rem 0.3rem;
                         border: 1px solid $JumboColor;
-                    }
-                }
+                    };
+                };
             };
             .blue-btn{
                 &#red-btn{
@@ -135,10 +133,10 @@ export default {
                     padding-top: 0.7rem;
                     &:hover{
                         background-color: $BurntSiennaColor;
-                    }
-                }
-            }
-        }
+                    };
+                };
+            };
+        };
     };
     .features-youtube{
         margin-bottom: 5rem;
@@ -153,20 +151,20 @@ export default {
                     color: black;
                     &:hover{
                         color: $DodgerBlueColor;
-                    }
-                }
-            }
+                    };
+                };
+            };
 
             i{
                 font-size: 1rem;
                 padding-left: 0.2rem;
-            }
-        }
+            };
+        };
         .grid-videos{
             display: flex;
             justify-content: space-between;
             width: 100%;
-        }
-    }
-}
+        };
+    };
+};
 </style>

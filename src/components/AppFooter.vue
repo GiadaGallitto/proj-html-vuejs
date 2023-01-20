@@ -7,7 +7,6 @@ export default {
 <template>
     <div class="footer-container">
         <section class="upper-footer wrapper-container">
-            <!-- Tre elementi differenti da mettere in flex con le varie info -->
             <div class="social">
                 <img src="../assets/logo.png" alt="">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure libero rerum, error a nobis mollitia voluptate.</p>
@@ -37,7 +36,6 @@ export default {
             </div>
         </section>
         <section class="lower-footer">
-            <!-- Elemento copyright al centro con un divisore tra parte sopra e sotto del footer -->
             <p>Copyright 2012 - 2020 | Avada theme by <span><a href="">ThemeFusion</a></span> | All rights reserved | Powered by <span><a href="">WordPress</a></span></p>
         </section>
     </div>
@@ -45,12 +43,10 @@ export default {
 
 <style lang="scss" scoped>
 @use "../styles/partials/variables.scss" as *;
-
 .footer-container {
     width: 100%;
     background-color: black;
     color: $WhiteColor;
-
     .upper-footer {
         display: flex;
         justify-content: space-between;
@@ -81,9 +77,9 @@ export default {
                         margin: 0 0.5rem;
                         font-size: 1.1rem;
                         color: $BurntSiennaColor;
-                    }
-                }
-            }
+                    };
+                };
+            };
             &.recent-posts{
                 ul{
                     list-style-type: none;
@@ -96,14 +92,14 @@ export default {
                             transition: all 0.3s ease-in-out;
                             i{
                                 font-size: 0.9rem
-                            }
-                        }
+                            };
+                        };
                         &:hover a{
                             color: $DodgerBlueColor;
-                        }
-                    }
-                }
-            }
+                        };
+                    };
+                };
+            };
             &.contacts{
                 p{
                     line-height: 2.2rem;
@@ -112,11 +108,10 @@ export default {
 
                 h6{
                     margin: 0.3rem 0 0.1rem;
-                }
-            }
-        }
+                };
+            };
+        };
     };
-
     .lower-footer {
         border-top: 1px solid $JumboColor;
         padding: 2.5rem 0 2rem;
@@ -127,8 +122,8 @@ export default {
             color: $WhiteColor;
             &:hover{
                 color: $DodgerBlueColor;
-            }
-        }
-    }
-}
+            };
+        };
+    };
+};
 </style>

@@ -12,7 +12,6 @@ export default {
 
 <template>
     <div class="header-container">
-        
         <div class="upper-bar wrapper-container">
             <div class="logo w-25">
                 <img src="../assets/logo.png" alt="">
@@ -27,9 +26,7 @@ export default {
                     <a href="">Store</a>
                     <span id="new-btn">new</span>
                 </li>
-                <li>
-                    <button class="blue-btn">Schedule a workout</button>
-                </li>
+                <li><button class="blue-btn">Schedule a workout</button></li>
                 <li><a href=""><i class="fa-solid fa-cart-shopping"></i></a></li>
                 <li><a href=""><i class="fa-solid fa-magnifying-glass"></i></a></li>
             </ul>
@@ -51,8 +48,7 @@ export default {
                 </button>
             </div>
 
-            <div class="jumbo-image">
-            </div>
+            <div class="jumbo-image"></div>
 
             <PlayButtonComponent class="header-play" />
             <div class="jumbo-details">
@@ -74,7 +70,6 @@ export default {
 
 .header-container {
     background-color: $CodGrayColor;
-
     .upper-bar {
         height: 100%;
         padding: 1.8rem 0;
@@ -94,8 +89,9 @@ export default {
                     transition: all 0.2s ease-in;
                     &:hover{
                         color: $WhiteColor;
-                    }
-                }
+                    };
+                };
+
                 #new-btn{
                     font-size: 0.9rem;
                     font-weight: 400;
@@ -104,18 +100,19 @@ export default {
                     color: black;
                     background-color: $YellowColor;
                     border-radius: 2px;
-                }
+                };
+
                 i{
                     color: $SilverColor;
                     font-size: 1.2rem;
                     transition: all 0.2s ease-in;
                     &:hover{
                         color: $WhiteColor;
-                    }
-                }
-            }
-        }
-    }
+                    };
+                };
+            };
+        };
+    };
 
     .jumbotron{
         height: 650px;
@@ -137,7 +134,7 @@ export default {
             #yellow-divider{
                 color: $YellowColor;
                 font-size: 1.2rem;
-            }
+            };
 
             p{
                 color: $JumboColor;
@@ -154,25 +151,27 @@ export default {
                 font-weight: 500;
                 padding: 0.9rem 2rem 0.7rem;
                 border-radius: 25px;
-                transition: all 0.2s ease-in-out;
+                transition: all 0.3s ease-in-out;
+
                 &:hover{
                     border: 2px solid $WhiteColor;
                     background-color: $WhiteColor;
                     color: black;
+
                     &:hover i{
                         color: black;
                     };
-                }
+                };
+
                 i{
                     padding-left: 0.5rem;
                     color: $WhiteColor;
                     font-size: 1.2rem;
                     vertical-align: middle;
                     transition: all 0.2s ease-in-out;
-                }
-            }
+                };
+            };
         };
-        // linear-gradient(to bottom, transparent 0%, black 100%);
         .jumbo-image{
             height: 100%;
             width: 100%;
@@ -199,19 +198,17 @@ export default {
                 padding: 0.5rem 1rem;
                 margin-bottom: 0.5rem;
                 border-radius: 8px;
+
                 i{
                     padding-bottom: 0.5rem;
                     font-size: 2rem;
 
                     &#green-icon{
                         color: #81c891;
-                    }
-                }
-            }
-        }
-    }
-}
-
-
-// Ogni wrapper container all'interno dei components principali avrà una width fissa
+                    };
+                };
+            };
+        };
+    };
+};
 </style>
