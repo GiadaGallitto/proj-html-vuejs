@@ -9,6 +9,10 @@
     font-weight: 500;
     padding: 1rem 2.2rem 0.8rem;
     border-radius: 30px;
+    transition: all 0.2s ease-in-out;
+    &:hover{
+        background-color: $BurntSiennaColor;
+    }
 }
 
 .red-title{

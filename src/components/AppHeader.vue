@@ -12,34 +12,33 @@ export default {
 
 <template>
     <div class="header-container">
-        <!-- Qui inserirò il la barra nera che conterrà logo e nav-bar -->
+        
         <div class="upper-bar wrapper-container">
             <div class="logo w-25">
                 <img src="../assets/logo.png" alt="">
             </div>
             <ul class="nav-bar">
-                <li>Home</li>
-                <li>Services</li>
-                <li>About</li>
-                <li>Videos</li>
-                <li>Blog</li>
+                <li><a href="">Home</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Videos</a></li>
+                <li><a href="">Blog</a></li>
                 <li>
-                    Store
+                    <a href="">Store</a>
                     <span id="new-btn">new</span>
                 </li>
                 <li>
                     <button class="blue-btn">Schedule a workout</button>
                 </li>
-                <li><i class="fa-solid fa-cart-shopping"></i></li>
-                <li><i class="fa-solid fa-magnifying-glass"></i></li>
+                <li><a href=""><i class="fa-solid fa-cart-shopping"></i></a></li>
+                <li><a href=""><i class="fa-solid fa-magnifying-glass"></i></a></li>
             </ul>
         </div>
-        <!-- Qui inserirò il jumbotron con background-image e il container di testo a sinisra del jumbo (va aggiunto anche il componentPlayButton) -->
+
         <div class="jumbotron">
             <div class="jumbo-text">
                 <h4 class="red-title">Certified fitness professional</h4>
                 <h1>Take control of your health</h1>
-                <!-- Component divider -->
                 <DividerComponent id="yellow-divider" />
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex in nulla iusto dolorum natus.</p>
                 <button class="blue-btn">
@@ -51,12 +50,12 @@ export default {
                     <i class="fa-solid fa-arrow-right"></i>
                 </button>
             </div>
+
             <div class="jumbo-image">
             </div>
-            <!-- Component Play Button -->
+
             <PlayButtonComponent class="header-play" />
             <div class="jumbo-details">
-                <!-- Elementi di dettaglio a destra del jumbotron -->
                 <div class="box-detail">
                     <i class="fa-solid fa-download"></i>
                     <span class="d-block">Demos</span>
@@ -88,9 +87,15 @@ export default {
 
             li {
                 display: inline-block;
-                color: $SilverColor;
                 padding: 0 1.2rem;
                 font-size: 1.1rem;
+                a{                    
+                    color: $SilverColor;
+                    transition: all 0.2s ease-in;
+                    &:hover{
+                        color: $WhiteColor;
+                    }
+                }
                 #new-btn{
                     font-size: 0.9rem;
                     font-weight: 400;
@@ -103,6 +108,10 @@ export default {
                 i{
                     color: $SilverColor;
                     font-size: 1.2rem;
+                    transition: all 0.2s ease-in;
+                    &:hover{
+                        color: $WhiteColor;
+                    }
                 }
             }
         }
@@ -139,16 +148,27 @@ export default {
 
             #empty-btn{
                 margin-left: 1rem;
-                background: none;
+                background: black;
+                border: 2px solid $JumboColor;
                 color: $WhiteColor;
-                border-color: $JumboColor;
+                font-weight: 500;
                 padding: 0.9rem 2rem 0.7rem;
                 border-radius: 25px;
+                transition: all 0.2s ease-in-out;
+                &:hover{
+                    border: 2px solid $WhiteColor;
+                    background-color: $WhiteColor;
+                    color: black;
+                    &:hover i{
+                        color: black;
+                    };
+                }
                 i{
                     padding-left: 0.5rem;
                     color: $WhiteColor;
                     font-size: 1.2rem;
                     vertical-align: middle;
+                    transition: all 0.2s ease-in-out;
                 }
             }
         };
@@ -171,6 +191,7 @@ export default {
             top: 8%;
             right: 1%;
             div{
+                cursor: pointer;
                 background-color: $WhiteColor;
                 color: #33475b;
                 font-weight: 600;
