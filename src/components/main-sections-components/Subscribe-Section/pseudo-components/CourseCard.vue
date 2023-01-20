@@ -1,9 +1,6 @@
 <script>
-import DividerComponent from '../../../DividerComponent.vue';
-
 export default{
     components: {
-        DividerComponent,
     },
 
     data(){
