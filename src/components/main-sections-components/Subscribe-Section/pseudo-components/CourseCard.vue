@@ -41,14 +41,16 @@ export default{
 
 <template>
     <div v-for="courseEl in courseList" class="course-card">
-        <div class="image-icon">
-            <img :src="getImagePath(courseEl.image)" alt="course image">
-        </div>
-        <div class="text">
-            <h3 class="title">{{ courseEl.title }}</h3>
-            <h5 class="subtitle">{{ courseEl.subtitle }}</h5>
-            <p class="text">{{ courseEl.text }}</p>
-            <h6 class="info">{{ courseEl.info }}<i class="fa-solid fa-chevron-right"></i></h6>
+        <div class="box-card">
+            <div class="image-icon">
+                <img :src="getImagePath(courseEl.image)" alt="course image">
+            </div>
+            <div class="text">
+                <h3 class="title">{{ courseEl.title }}</h3>
+                <h5 class="subtitle">{{ courseEl.subtitle }}</h5>
+                <p class="text">{{ courseEl.text }}</p>
+                <h6 class="info">{{ courseEl.info }}<i class="fa-solid fa-chevron-right"></i></h6>
+            </div>
         </div>
     </div>
 
@@ -57,14 +59,28 @@ export default{
 <style lang="scss" scoped>
 @use "../../../../styles/partials/variables.scss" as *;
 .course-card{
-    width: calc((100% / 3) - 2rem);
+    cursor: pointer;
+    width: calc((100% / 3) - 1.5rem);
     position: relative;
-    border: 4px solid $DodgerBlueColor;
+    border: 4px solid $CodGrayColor;
+    padding: 1rem 1rem;
     border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 5rem 3.2rem;
+    transition: all 0s ease-in;
+    &:hover{
+        border-color: $DodgerBlueColor;
+        &:hover .box-card{
+            border-color: $CodGrayColor;
+        }
+    }
+    .box-card{
+        padding: 5rem 2.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 4px solid $DodgerBlueColor;
+        border-radius: 5px;
+        transition: all 0s ease-in-out;
+    }
     .image-icon{
         img{
             width: 70px;

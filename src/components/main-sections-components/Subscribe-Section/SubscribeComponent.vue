@@ -106,11 +106,12 @@ export default {
         };
     };
     .types-courses{
-        padding: 7rem 0;
+        height: 770px;
         .grid-courses{
             width: 100%;
             display: flex;
             justify-content: space-between;
+            padding-top: 6rem;
         }
     }
 }
