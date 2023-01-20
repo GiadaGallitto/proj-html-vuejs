@@ -27,7 +27,6 @@ export default {
 @use "../../../styles/partials/variables.scss" as *;
 .daily-workout{
     width: 100%;
-    // background: rgb(43,20,166);
     .work-jumbo {
         height: 650px;
         width: 100%;
