@@ -50,6 +50,7 @@ export default{
 <style lang="scss" scoped>
 @use "../../../../styles/partials/variables.scss" as *;
 .video-card{
+    cursor: pointer;
     width: calc((100% / 3) - 2rem);
     position: relative;
     .image-bg{
@@ -66,12 +67,14 @@ export default{
             position: absolute;
             top: 30%;
             left: 41%;
-            // transform: translate(-50% , -50%);
             color: $DodgerBlueColor;
             background-color: $WhiteColor;
             padding: 1.4rem 1.7rem;
             border-radius: 50%;
             font-size: 0.8rem;
+            &:hover{
+                color: $BurntSiennaColor;
+            }
         }
     }
     .text{

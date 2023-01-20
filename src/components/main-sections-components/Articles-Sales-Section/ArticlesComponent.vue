@@ -17,8 +17,10 @@ export default {
             <div class="tools">
                 <h3>Latest articles</h3>
                 <h5>
-                    Read all articles
-                    <i class="fa-solid fa-chevron-right"></i>
+                    <a href="">
+                        Read all articles
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </a>
                 </h5>
             </div>
             <div class="grid-videos">
@@ -54,6 +56,15 @@ export default {
             align-items: center;
             justify-content: space-between;
             margin-bottom: 2rem;
+
+            h5{
+                a{
+                    color: black;
+                    &:hover{
+                        color: $DodgerBlueColor;
+                    }
+                }
+            }
 
             i {
                 font-size: 1rem;

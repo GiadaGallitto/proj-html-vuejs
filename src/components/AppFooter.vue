@@ -12,21 +12,21 @@ export default {
                 <img src="../assets/logo.png" alt="">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure libero rerum, error a nobis mollitia voluptate.</p>
                 <span class="social-icons">
-                    <i class="fa-brands fa-facebook"></i>
-                    <i class="fa-brands fa-twitter"></i>
-                    <i class="fa-brands fa-youtube"></i>
-                    <i class="fa-brands fa-instagram"></i>
-                    <i class="fa-brands fa-linkedin-in"></i>
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-youtube"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
                 </span>
             </div>
             <div class="recent-posts">
                 <h5>Recent posts</h5>
                 <ul>
-                    <li><i class="fa-solid fa-chevron-right"></i> The best protein shake</li>
-                    <li><i class="fa-solid fa-chevron-right"></i> Ultimate cardio workout</li>
-                    <li><i class="fa-solid fa-chevron-right"></i> New juices available now</li>
-                    <li><i class="fa-solid fa-chevron-right"></i> Tips to find training partners</li>
-                    <li><i class="fa-solid fa-chevron-right"></i> 20 best healthy recipes</li>
+                    <li><a href=""><i class="fa-solid fa-chevron-right"></i> The best protein shake</a></li>
+                    <li><a href=""><i class="fa-solid fa-chevron-right"></i> Ultimate cardio workout</a></li>
+                    <li><a href=""><i class="fa-solid fa-chevron-right"></i> New juices available now</a></li>
+                    <li><a href=""><i class="fa-solid fa-chevron-right"></i> Tips to find training partners</a></li>
+                    <li><a href=""><i class="fa-solid fa-chevron-right"></i> 20 best healthy recipes</a></li>
                 </ul>
             </div>
             <div class="contacts">
@@ -38,7 +38,7 @@ export default {
         </section>
         <section class="lower-footer">
             <!-- Elemento copyright al centro con un divisore tra parte sopra e sotto del footer -->
-            <p>Copyright 2012 - 2020 | Avada theme by <span>ThemeFusion</span> | All rights reserved | Powered by <span>WordPress</span></p>
+            <p>Copyright 2012 - 2020 | Avada theme by <span><a href="">ThemeFusion</a></span> | All rights reserved | Powered by <span><a href="">WordPress</a></span></p>
         </section>
     </div>
 </template>
@@ -91,8 +91,15 @@ export default {
                     li{
                         line-height: 3rem;
                         font-size: 1.1rem;
-                        i{
-                            font-size: 0.9rem
+                        a{
+                            color: $WhiteColor;
+                            transition: all 0.3s ease-in-out;
+                            i{
+                                font-size: 0.9rem
+                            }
+                        }
+                        &:hover a{
+                            color: $DodgerBlueColor;
                         }
                     }
                 }
@@ -116,8 +123,11 @@ export default {
         font-size: 1.1rem;
         text-align: center;
         color: $JumboColor;
-        span{
+        span a{
             color: $WhiteColor;
+            &:hover{
+                color: $DodgerBlueColor;
+            }
         }
     }
 }

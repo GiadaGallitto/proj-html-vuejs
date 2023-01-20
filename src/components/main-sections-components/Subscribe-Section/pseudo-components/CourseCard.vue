@@ -62,24 +62,25 @@ export default{
     cursor: pointer;
     width: calc((100% / 3) - 1.5rem);
     position: relative;
-    border: 4px solid $CodGrayColor;
-    padding: 1rem 1rem;
+    padding: 0.5rem 0.5rem;
     border-radius: 5px;
-    transition: all 0s ease-in;
+    transition: all 0.3s ease-in-out;
     &:hover{
-        border-color: $DodgerBlueColor;
+        padding: 0;
         &:hover .box-card{
-            border-color: $CodGrayColor;
+            padding: 5.5rem 3rem;
         }
     }
     .box-card{
+        width: 100%;
+        height: 100%;
         padding: 5rem 2.5rem;
         display: flex;
         flex-direction: column;
         align-items: center;
         border: 4px solid $DodgerBlueColor;
         border-radius: 5px;
-        transition: all 0s ease-in-out;
+        transition: all 0.3s ease-in-out;
     }
     .image-icon{
         img{

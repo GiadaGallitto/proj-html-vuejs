@@ -17,7 +17,7 @@ export default {
             <div class="info-workout">
                 <h1>Crossfit workout of the day</h1>
                 <h3>November 15th, 2019</h3>
-                <p>View all videos <i class="fa-solid fa-arrow-right-long"></i></p>
+                <p><a href="">View all videos <i class="fa-solid fa-arrow-right-long"></i></a></p>
             </div>
         </article>
     </section>
@@ -60,7 +60,7 @@ export default {
                 margin-bottom: 1rem;
             }
 
-            p {
+            p a{
                 color: $WhiteColor;
                 font-size: 1.2rem;
                 margin-bottom: 2rem;

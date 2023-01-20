@@ -58,6 +58,7 @@ export default{
 <style lang="scss" scoped>
 @use "../../../../styles/partials/variables.scss" as *;
 .partner-card{
+    cursor: pointer;
     width: calc((100% / 4) - 2rem);
     display: flex;
     flex-direction: column;
