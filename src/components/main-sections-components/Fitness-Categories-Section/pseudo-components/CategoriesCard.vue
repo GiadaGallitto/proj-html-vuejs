@@ -54,10 +54,15 @@ export default{
 <style lang="scss" scoped>
 @use "../../../../styles/partials/variables.scss" as *;
 .category-card{
+    cursor: pointer;
     width: calc((100% / 3) - 2rem);
     position: relative;
     border-radius: 1% 1% 10% 1%;
     overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    &:hover{
+        transform: scale(1.05);
+    }
     .image-bg{
         width: 100%;
         height: 100%;

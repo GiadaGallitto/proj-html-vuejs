@@ -44,8 +44,10 @@ export default {
             <div class="tools">
                 <h3>Featured playlists</h3>
                 <h5>
-                    View all videos
-                    <i class="fa-solid fa-chevron-right"></i>
+                    <a href="">
+                        View all videos
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </a>
                 </h5>
             </div>
             <div class="grid-videos">
@@ -110,6 +112,7 @@ export default {
                     margin-top: 0.5rem;
 
                     #red-part{
+                        cursor: pointer;
                         color: white;
                         background-color: red;
                         border: 1px solid $MonzaColor;
@@ -130,6 +133,9 @@ export default {
                     border: none;
                     font-size: 1.1rem;
                     padding-top: 0.7rem;
+                    &:hover{
+                        background-color: $BurntSiennaColor;
+                    }
                 }
             }
         }
@@ -141,6 +147,15 @@ export default {
             align-items: center;
             justify-content: space-between;
             margin-bottom: 2rem;
+
+            h5{
+                a{
+                    color: black;
+                    &:hover{
+                        color: $DodgerBlueColor;
+                    }
+                }
+            }
 
             i{
                 font-size: 1rem;
